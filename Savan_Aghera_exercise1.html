@@ -11,10 +11,12 @@
     <style type="text/css">
         nav ul li:hover{
             background-color: #31d1ff;
-
+            transition: 0.3s;
         }
+
         .dropdown-item:hover{
             background-color: #31d1ff;
+            transition: 0.3s;
         }
         .gray{
             color: gray;
@@ -36,13 +38,13 @@
             display: none;
             width: 100%;
             height: 100%;
-            background:rgba(52,152,219,0.8);
+
         }
         .g-img:hover  > #imgoverlay
         {
             display: block;
-            border-radius: 5px;
-
+            background:rgba(52,152,219,0.8);
+            transition: 1s;
 
         }
 
@@ -50,6 +52,7 @@
             display:grid;
             width: 100%;
             height: 100%;
+
         }
         .ico span > i {
             border: 1px solid ;
@@ -65,11 +68,16 @@
 
         }
         .ico span > i:hover {
-            border: 2px solid black;
+            border: 1px solid black;
             color: black;
-            border-radius: 5px;
-        }
+            transition: 0.8s;
 
+        }
+        .h2:hover{
+            color: #31d1ff;
+            text-shadow: 2px 2px 3px #2aaaff;
+            transition: 0.4s;
+        }
         input[type="text"],textarea[type="text"],input[type="submit"],input[type="checkbox"]
         {
             background: transparent;
@@ -81,6 +89,16 @@
             font-size: smaller;
             padding: 2%;
         }
+        input:hover{
+            padding: 2.3%;
+            transition: .4s;
+            border-color: #31d1ff;
+        }
+        textarea:hover{
+            padding: 2.3%;
+            transition: .4s;
+            border-color: #31d1ff;
+        }
         input[type="submit"]{
             width:auto;
             padding: 1%;
@@ -91,11 +109,20 @@
             color: white !important;
         }
         .b-g-i{
-            height: 500px ;
+            height: 700px ;
             background:url('https://miro.medium.com/max/3840/1*h58eRcgYpAFec_QbmJcRpg.jpeg') center;
             background-color: #6c757d;
             background-size: 100% 100%;
             padding-top: 4%;
+        }
+        .iconb{
+            color: black;
+        }
+        .iconb:hover{
+            color: #31d1ff;
+            text-shadow:  1px 1px 1px #31d1ff;
+            transition: .2s;
+            font-size: xx-large;
         }
     </style>
 </head>
@@ -155,19 +182,19 @@
     <div class="jumbotron">
         <div class="row text-center padding">
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <a href="#"><i class="fas fa-mobile-alt h3"></i></a>
+                <a href="#"><i class="fas fa-mobile-alt h3 iconb"></i></a>
                 <h5 class="mt-3"><strong>Optimized for all devices</strong></h5>
                 <p class="gray">STRICT has been designed to be fully<br>responsive on all devices</p>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <a href="#"><i class="fas fa-paper-plane h3"></i></a>
+                <a href="#"><i class="fas fa-paper-plane h3 iconb"></i></a>
                 <h5 class="mt-3"><strong>Clean & Minimal Design</strong></h5>
                 <p class="gray">This multipurpose theme is especially created<br>to be used for different projects.</p>
 
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <a href="#"><i class="fas fa-bullhorn h3"></i></a>
+                <a href="#"><i class="fas fa-bullhorn h3 iconb"></i></a>
                 <h5 class="mt-3"><strong>Font Awesome</strong></h5>
                 <p class="gray">This multipurpose theme is especially created<br> to be used for different projects</p>
             </div>
@@ -176,6 +203,8 @@
 </div>
 
 <div class="container mb-5 p-5  ">
+    <h2 class="h2 font-weight-light text-center m-4">Show case your work like pro</h2>
+    <p class="gray text-center mb-5">connect me if you like my work</p>
     <div class="row">
 
         <div class="col-12 col-md-4 mb-4 mb-md-0">
@@ -238,12 +267,10 @@
     </div>
 </div>
 
-<div class="container mt-5">
-    <h5 class="font-weight-light text-center m-4">Stay With Us</h5>
-    <p class="gray text-center mb-5">We ensure Quality & Support</p>
-
-
-    <div class="row b-g-i">
+<div class="container mt-5 b-g-i">
+    <h2 class="font-weight-light text-center mt-4 text-light h2 ">Stay With Us</h2>
+    <p class="gray text-center mb-5 text-light">We ensure Quality & Support</p>
+    <div class="row ">
         <div class="col-12">
             <form>
                 <div class="form-group">
@@ -269,10 +296,10 @@
 
             <p class="graybig" style="float: left;margin-left: 4%;margin-right: 60%" >Copyright@ 2019, STRICT</p>
             <div style="float:right;font-size: x-large">
-                    <a href="#"><i class="fa fa-facebook-f p-2"></i></a>
-                    <a href="#"><i class="fa fa-twitter p-2"></i></a>
-                    <a href="#"><i class="fa fa-instagram p-2"></i></a>
-                    <a href="#"><i class="fa fa-youtube p-2"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f p-2 iconb"></i></a>
+                    <a href="#"><i class="fa fa-twitter p-2 iconb"></i></a>
+                    <a href="#"><i class="fa fa-instagram p-2 iconb"></i></a>
+                    <a href="#"><i class="fa fa-youtube p-2 iconb"></i></a>
             </div>
 
         </div>
