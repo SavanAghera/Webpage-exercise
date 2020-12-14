@@ -17,6 +17,11 @@ a[role="button"]:focus{
     transition: 0.4s;
     text-shadow: 2px 2px 2px #31d1ff;
 }
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin-right: 3%;
+}
 .gray{
     color: gray;
     font-size: smaller;
@@ -24,13 +29,27 @@ a[role="button"]:focus{
 .graybig{
     color: gray;
 }
+.iconb {
+    color: #f5f5f5;
+    text-shadow: 1px 1px 2px #3d3d3d;
+    padding: 5%;
+    background: rgb(41, 202, 234);
+    background: linear-gradient(90deg, rgb(40, 185, 216) 0%, rgba(32,181,210,0.9920343137254902) 45%, rgba(18,192,228,1) 47%, rgba(0,212,255,1) 49%, rgba(38,195,227,1) 100%);}
+
+.iconb:hover{
+    color: #31d1ff;
+    text-shadow:  3px 3px 3px black;
+    transition: .2s;
+    font-size: xx-large;
+}
+
 
 .ico span > i {
     border: 1px solid ;
     font-size: 1.5em;
     color: white;
-    padding: 20px;
-    margin:10px;
+    padding: 12px;
+    margin:5px;
     border-radius: 5px;
 }
 
@@ -46,7 +65,7 @@ a[role="button"]:focus{
 }
 
 .hover-img {
-    background-color: #000;
+    background-color: #1fbbff;
     color: #fff;
     display: inline-block;
     border-radius: 5px;
@@ -87,16 +106,19 @@ a[role="button"]:focus{
     line-height: 1.1em;
     opacity: 0;
     transition-delay: 0.1s;
-    font-size: 24px;
+    font-size: 10px;
     font-family: sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .hover-img div span > i:hover{
-    border: 1px solid black;
-    color: #1fbbff;
-    transition: 0.8s;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    padding: 15px;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px black;
+    transition: 0.3s;
 }
 .hover-img:hover > img {
     opacity: 0.5;
@@ -174,12 +196,7 @@ input::-webkit-input-placeholder ,textarea::-webkit-input-placeholder{
     background-size: 100% 100%;
     padding-top: 4%;
 }
-.iconb{
-    color: black;
-}
-.iconb:hover{
-    color: #31d1ff;
-    text-shadow:  1px 1px 1px #31d1ff;
-    transition: .2s;
-    font-size: xx-large;
+
+.foot{
+    background-color: lightgray;
 }
